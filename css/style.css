@@ -526,7 +526,10 @@ div.caption{
 	top:0px;
 	width:100%;
 	background:#02918C;
-	opacity:0.75;
+/* Fallback for web browsers that doesn't support RGBa 
+background: rgb(0, 0, 0);
+/* RGBa with 0.6 opacity */
+background: rgba(0, 0, 0, 0.9);
 }
 div.caption h4{
 	font-size:1.2em;
