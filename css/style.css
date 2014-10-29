@@ -473,7 +473,7 @@ a.bannner-btn:hover{
 .services-grid-right{
 	background:url(../images/service-img.jpg) no-repeat 0px 0px;
 	background-size:cover;
-	min-height: 741px;
+	min-height: 1000px;
 }
 /*---works---*/
 .works{
