@@ -1,0 +1,49 @@
+<head>
+<link rel="stylesheet" type="text/css" href="css/shadow.css"/>
+<link rel="stylesheet" type="text/css" href="css/trans.css" />
+</head>
+<body>
+<nav>
+  <ul>
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+	  <li style="visibility:hidden">
+      <a href="#">About</a>
+    </li><li style="visibility:hidden">
+      <a href="#">Blog</a>
+    </li>
+    <li style="visibility:hidden">
+      <a href="#">About</a>
+    </li><li style="visibility:hidden">
+      <a href="#">Blog</a>
+    </li>
+    <li style="visibility:hidden">
+      <a href="#">About</a>
+	  </li>
+    <li style="padding-right:70px">
+      <a href="index.html#work">Back</a>
+    </li>
+    </ul>
+</nav>
+<div class="page-curl shadow-bottom">
+	<h2 style="font-size: 40px;">Automation of Radio Diagnosis</h2>
+	<br>
+	<div style="text-align:center"><img src="images/w1.jpg" width='450' height='332'/></div>
+	<p style="text-align:center; font-size:22px; color: grey">Best Paper - Computer Society of India<br>Proceedings of ADCOM conference [IEEE Explorer]</p>
+	<h2>The Story Behind</h2>
+	<p>Coming from a family of doctors, I had a first hand view of how the Radio Diagnosis takes place. I was exposed to the discrepancies among doctors to detect Cancer cells. Also the dearth of Radiologists across the globe added up to this factor. I wanted to develop something in this regard which led me to take up this research project to automate some process of Radio Diagnosis.</p>
+<p>Having a basic understanding of a couple of Machine learning algorithms, I felt that Support Vector Machines can classify medical images effectively with a reasonable degree of accuracy. Upon consulting some Radiologists, I understood about Dicom images that are generated and how normally Radio Diagnosis is performed. The fact about Hounsfield Coefficient is what caught my attention
+and i felt this combined with SVM can make this automation happen.</p><br/>
+<div style="text-align:center"><img src="images/radio-1.jpg" width='350' height='340'/></div>
+<h2>Data Extraction</h2>
+<p>DICOM images obtained from the scan are input for the system. Once these images are obtained, the Hounsfield coefficient values of every pixel is obtained and stored in a CSV file. The CSV file contains Hounsfield coefficient values of different pixels against its position across 3 dimensions x, y and z.</p>
+<h2>Data Transformation</h2>
+<p>The values obtained are transformed to match the standard image before classification. The dimensions of the appropriate standard image are determined and the image is reconstructed according to theses dimensions. The relative positions of different tissues within the image are used to match to the standard image.</p>
+<h2>Classification</h2>
+<p>Support Vector Machines is used for Classification. The 3 dimensions representing the position of each point derives a 3 dimensional space for SVM. Each HU value is plotted as a point in this 3-D space. If the different classes of points are linearly separable, linear kernel is used, else Radial Basis Function kernels is used to map samples into another dimensional space. The Maximum marginal hyper-plane is found that differentiates between the two classes and the test data is plotted next and compared to
+which class it belongs.</p>
+<p> While this paper is in the process of being archived in IEEE Explorer, a draft version can be viewed here - <a href="radio.pdf">RadioDiagnosis.pdf</a></p>
+<br><br>
+</div>
+</body>
