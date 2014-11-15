@@ -6,6 +6,11 @@ html, body{
     font-size: 100%;
   	 background: #FFf;
 }
+
+body{
+overflow:hidden;
+}
+
 body a{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -142,8 +147,6 @@ body a{
 /*-----start-header----*/
 .header{
 }
-
-
 
 .logo{
 	float: left;
