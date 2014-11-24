@@ -7,10 +7,6 @@ html, body{
   	 background: #FFf;
 }
 
-body{
-overflow:hidden;
-}
-
 body a{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
