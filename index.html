@@ -1,342 +1,303 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Ganesh N</title>
-		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="js/jquery.min.js"></script>
-		 <!-- Custom Theme files -->
-		<link href="css/style.css" rel='stylesheet' type='text/css' />
-   		 <!-- Custom Theme files -->
-   		 <!---- start-smoth-scrolling---->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
+<head>
+<title>Ganesh N</title>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!--scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 			});
-		</script>
-		 <!---- start-smoth-scrolling---->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
-		<!----webfonts--->
-		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-		<!---//webfonts--->
-		<!----start-top-nav-script---->
-		<script>
-			$(function() {
-				var pull 		= $('#pull');
-					menu 		= $('nav ul');
-					menuHeight	= menu.height();
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-				$(window).resize(function(){
-	        		var w = $(window).width();
-	        		if(w > 320 && menu.is(':hidden')) {
-	        			menu.removeAttr('style');
-	        		}
-	    		});
-			});
-		</script>
-		<!----//End-top-nav-script---->
-		</head>
-	<body>
-		<!----- start-header---->
-			<div id="home" class="header">
-					<div>
-						<div class="container">
-						<div class="logo">
-						<br/>
-						<p></p>
-							<!--<a href="#"><img src="images/logo.png" title="Johndeo" /></a>-->
-						</div>
-						<!----start-top-nav---->
-						 <nav class="top-nav">
-							<ul class="top-nav">
-								<li><a href="#home" class="scroll">Home</a><span> </span></li>
-								<li><a href="#about" class="scroll">About Me</a></li>
-								<li><a href="#services" class="scroll">Hobbies</a></li>
-								<li><a href="#work" class="scroll">My work</a><span> </span></li>
-								<li><a target="_blank" href="http://ganeshn1411.github.io/resume.pdf">Resume</a><span> </span></li>
-								<li><a href="#contact" class="scroll">contact ME</a></li>
-								<div class="clearfix"> </div>
-							</ul>
-							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
-						</nav>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
+		});
+	</script>
+<!--scrolling-->
+</head>
+<body>	
+<!--top-header-->
+<div id="home" class="top-header">
+	 <div class="container">
+		<div class = "fixed-header">
+			<div class="top-menu">
+				<span class="menu"><img src="images/nav-icon.png" alt=""/></span>
+				<br/>
+					<ul>
+				<li><a class="scroll" href="#home">Home</a></li>
+				<li><a class="scroll" href="#service">About</a></li>
+				<li><a href="resume/Ganesh.pdf" target="_blank">Resume</a></li>
+				<li><a class="scroll" href="#gallery">Work</a></li>
+				<li><a class="scroll" href="#blog">Blog</a></li>
+				<li><a class="scroll" href="#contact">Contact</a></li>
+			 </ul>
+			 <br/>
+					<!-- script-for-menu -->
+					<script>					
+							$("span.menu").click(function(){
+								$(".top-menu ul").slideToggle("slow" , function(){
+								});
+							});
+				 </script>
+					<!-- script-for-menu -->
 			</div>
-			<!----- //End-header---->
-			<!----banner---->
-			<div class="banner">
-				<!---- banner-info ---->
-				<div class="banner-info text-center">
-					<p></p>
-					<h1>Welcome to my World</h1>
-					<span>Explore and Connect<span>
-					<br/>
-					<br/>
-					<br/>
-					<br/>
-					<!--<label> </label>-->
-					<div class="clearfix"> </div>
-					<a style="  border-top: 1px solid #96d1f8;
-   background: #65b5d7;
-   background: -webkit-gradient(linear, left top, left bottom, from(#02918c), to(#65b5d7));
-   background: -webkit-linear-gradient(top, #02918c, #65b5d7);
-   background: -moz-linear-gradient(top, #02918c, #65b5d7);
-   background: -ms-linear-gradient(top, #02918c, #65b5d7);
-   background: -o-linear-gradient(top, #02918c, #65b5d7);
-   padding: 14.5px 29px;
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 18px;
-   font-family: Lato,Georgia, Serif;
-   text-decoration: none;
-   vertical-align: middle; position:relative;
-	left: 10%;" href="#about" class="scroll">Know More</a>
-				</div>
-				<!-- //banner-info ---->
 			</div>
-			<!--//banner---->
-			<!---- about --->
-			<div id="about" class="about">
-				<div class="about-head text-center">
-					<div class="container">
-						<h2>ABOUT ME</h2>
-						<span></span>
-						<p style="text-align:justify;">I am Ganesh, an IT Engineer at Cisco systems working in the Cloud Orchestration and Platform Services domain. Information Technology, for me is a way to make the world more collaborative, well connected and smart.</p>
-						<p style="font-size:23px; font-weight:bold">My Research Interests</p>
-					</div>
-				</div>
-				<!--- about-grids --->
+		  </div>
+	 </div>
+</div>	
+<!--header-->
+<div class="header">
+		<div class="container">
+			 <div class="banner-info">
+				 <h2>Hey, I'm Ganesh</h2>
+				 <br>
+				 <h3>Explore my site to get to know about me and my work</h3>
+				 <br><br><br>
+				 <ul>
+					<li><h3>Email : <a href="mail-to:gnagendr@andrew.cmu.edu">gnagendr@andrew.cmu.edu</a></h3></li>
+					<li><h3>LinkedIn : <a href="https://www.linkedin.com/in/ganeshn1411" target="_blank">Ganesh N Prasad</a></h3></li>
+				</ul>
+			 </div>
+			 <div class="clearfix"></div>
+		</div>
+</div>
+<!--Service-->
+<div id="service" class="service">
+	 <div class="container">
+		 <h3>About Me</h3>
+		 <div>
+		 <br>
+		 <br>
+		 <h4 style="text-align:center"> I am a Masters student of Information Systems - Data Analytics at Carnegie Mellon University.</h4> 
+		 <br>
+		 <h4 style="text-align:center">I strongly believe that Data Science has the power to make the world a better place to live in and love to contribute in this exciting field. </h4>
+		 <br>
+		 </div>
+		 <div class="service-grids">
+		 <div class= "icon-title">
+			<h4>Interests</h4>
+		 </div>
+		 <br/>
+		</div>
+	 </div>
+	 				<!--- about-grids --->
 				<div class="about-grids text-center">
 					<div class="container">
 						<div class="col-md-3 about-grid">
-							<div style="width:33px; height:34px; display:inline-block;position:relative; top:-15px"><img src="images/png/missing.png" alt="missing"></div>
-							<p style="font-size:23px; position:relative; top:-10px">Data Mining</p>
+							<div><img src="images/png/settings48.png" height="32px"; width="32px"></div>
+							<p>Machine Learning</p>
 							<label></label>
 						</div>
 						<div class="col-md-3 about-grid">
-							<div style="width:33px; height:34px; display:inline-block;position:relative; top:-5px"><img src="images/png/robot3.png" alt="missing" height="45px"; width="40px"></div>
-							<p style="font-size:23px">Artificial Intelligence</p>
+							<div><img src="images/png/intelligence.png" height="32px"; width="32px"></div>
+							<p>Artificial Intelligence</p>
 							<label></label>
 						</div>
 						<div class="col-md-3 about-grid">
-							<div style="width:33px; height:34px; display:inline-block;position:relative; top:-5px"><img src="images/png/settings48.png" alt="missing" height="45px"; width="45px"></div>
-							<p style="font-size:23px">Machine Learning</p>
+							<div><img src="images/png/data62.png" height="32px"; width="32px"></div>
+							<p>Data Analytics</p>
 							<label></label>
 						</div>
 						<div class="col-md-3 about-grid">
-							<div style="width:33px; height:34px; display:inline-block;position:relative; top:-5px"><img src="images/png/data29.png" alt="missing" height="50px"; width="50px"></div>
-							<p style="font-size:23px">Cloud Computing</p>
+							<div><img src="images/png/data29.png" height="32px"; width="32px"></div>
+							<p>Cloud Computing</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 				</div>
 				<!--- about-grids --->
-			</div>
-			<!----//about --->
-			<!--- services ---->
-			<div id="services" class="services">
-					<!---services-grids--->
-					<div class="services-grids">
-						<div class="col-md-6 services-grid-left">
-							<div class="service-head">
-								<h2>HOBBIES</h2>
-								<span> </span>
-								<p>Extra Curricular activities have not just helped me take meaningful breaks but made me discover myself and make my life more enjoyable.</p>
-							</div>
-							<!----- services-grid-left-grids ---->
-							<div class="services-grid-left-grids" >
-								<div class="col-md-6 services-grid-left-grid" style="position:relative;top:10px;">
-									<div style="width:33px; height:34px; display:inline-block;position:relative; top:-10px"><img src="images/png/mandolin.png" alt="missing" height="50px"; width="50px"></div>
-									<h3><a>Mandolin</a></h3>
-									<p style="text-align:justify">Music being a passion from childhood, I play Indian classical music on Mandolin.</p>
-								</div>
-								<div class="col-md-6 services-grid-left-grid">
-									<div style="width:33px; height:34px; display:inline-block;position:relative; top:-5px"><img src="images/png/person228.png" alt="missing" height="60px"; width="60px"></div>
-									<h3><a>Swimming</a></h3>
-									<p style="text-align:justify">I am a state level swimmer and an ASCA certified swimming coach and a lifeguard.</p>
-								</div>
-								<div class="col-md-6 services-grid-left-grid" style="position:relative;top:10px;">
-									<div style="width:33px; height:34px; display:inline-block;position:relative; top:-5px"><img src="images/png/stamp6.png" alt="missing" height="45px"; width="45px"></div>
-									<h3><a>Philately</a></h3>
-									<p style="text-align:justify">Collecting stamps from across the globe is another hobby during my free time.</p>
-								</div>
-								<div class="col-md-6 services-grid-left-grid" style="position:relative;top:10px;">
-									<div style="width:33px; height:34px; display:inline-block;"><img src="images/png/suitcase.png" alt="missing" height="40px"; width="40px"></div>
-									<h3><a>HAM</a></h3>
-									<p style="text-align:justify">Being a HAM licence holder, I am an active HAM radio operator.</p>
-								</div>
-																<div class="col-md-6 services-grid-left-grid" style="position:relative;top:10px;">
-									<div style="width:33px; height:34px; display:inline-block;position:relative; top:-5px"><img src="images/png/mountain18.png" alt="missing" height="50px"; width="50px"></div>
-									<h3><a>Trekking, Cycling</a></h3>
-									<p style="text-align:justify">I regularly go on long Cycling trips, trekking and hiking expeditions during my weekends.</p>
-								</div>
-								<div class="col-md-6 services-grid-left-grid" style="position:relative;top:10px;">
-									<div style="width:33px; height:34px; display:inline-block;"><img src="images/png/breathing.png" alt="missing" height="60px"; width="60px"></div>
-									<h3><a>Community Service</a></h3>
-									<p style="text-align:justify">Being trained in First aid and Basic life support to give CPR, i participate in various health awareness camps.</p>
-								</div>
-							</div>
-							<!----- services-grid-left-grids ---->
-						</div>
-						<div class="col-md-6 services-grid-right">
-							
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<!---services-grids--->
-			</div>
-			<!---//services ---->
-			<!---- works ---->
-			<div id="work" class="works">
-				<div class="conatiner">
-					<div class="works-head text-center">
-						<h2>MY WORK</h2>
-						<span> </span>
-						<p>I have developed applications in various domains of Computer Science</p>
-					</div>
-				</div>
-					<!---works-grids--->
-					<div class="works-grids">
-						<div class="works-grid col-md-4">
-							<img src="images/w1.jpg" title="name" />
-							<div class="caption">
-								<h4>Automation of Radio Diagnosis</h4>
-								<p>A system where the process of Radio Diagnosis is automated to detect the presence of cancer cells using Support Vector Machines.</p>
-								<a class="myanchor" href="radio.html">Know More</a>
-							</div>
-						</div>
-						<div class="works-grid col-md-4" id="cerebro">
-							<img src="images/w2.jpg" title="name" />
-							<div class="caption">
-								<h4>Cerebro</h4>
-								<p>A Brain Computer Interface used to identify objects a person is thinking about and to display it on the screen for a paralysed person or is not able to communicate.</p>
-								<a class="myanchor" href="cerebro.html">Know More</a>
-							</div>
-						</div>
-						<div class="works-grid col-md-4">
-							<img src="images/w3.jpg" title="name" />
-							<div class="caption">
-								<h4>Live Bus Tracker</h4>
-								<p>A mobile application that can track the buses running within a city based on their GPS and display it on a live map.</p>
-								<a class="myanchor" href="live bus.html">Know More</a>
-							</div>
-						</div>
-						<div class="works-grid col-md-4">
-							<img src="images/w4.jpg" title="name" />
-							<div class="caption">
-								<h4>Pitstop</h4>
-								<p>A smart parking application that gives a live map of nearest parking places available and gets dynamically updated.</p>
-								<a class="myanchor" href="Pitstop.html">Know More</a>
-							</div>
-						</div>
-						<div class="works-grid col-md-4">
-							<img src="images/w5.jpg" title="name" />
-							<div class="caption">
-								<h4>Media Server</h4>
-								<p>A networking application that enables live streaming of data, images and videos without delays over a Local Area Network using Node.js.</p>
-								<a class="myanchor" href="media.html">Know More</a>
-							</div>
-						</div>
-						<div class="works-grid col-md-4">
-							<img src="images/w6.jpg" title="name" />
-							<div class="caption">
-								<h4>Empathy</h4>
-								<p>An application that analyses the mood of a person based on the text that is entered and plays relevant music based on the mood.</p>
-								<a class="myanchor" href="Empathy.html">Know More</a>
-							</div>
-						</div>
-						<div class="works-grid col-md-4">
-							<img src="images/w7.jpg" title="name" />
-							<div class="caption">
-								<h4>Alumni Website</h4>
-								<p>A snippet of the college alumni website developed for R.V. college of Engineering using HTML5, CSS3, PHP and JQuery.</p>
-								<a class="myanchor" href="alumni.html">Know More</a>
-							</div>
-						</div>
-						<div class="works-grid col-md-4">
-							<img src="images/w8.jpg" title="name" />
-							<div class="caption">
-								<h4>Activity Manager</h4>
-								<p>A database application which is used to manage various activities within a department and provide intelligent metrics on the different activities.</p>
-								<a class="myanchor" href="activity.html">Know More</a>
-							</div>
-						</div>
-						<div class="works-grid col-md-4">
-							<img src="images/w9.jpg" title="name" />
-							<div class="caption">
-								<h4>Health Analytic</h4>
-								<p>A visualization dashboard to analyse and provide health metrics of different states within India based on various parameters using SAP Lumira and R.</p>
-								<a class="myanchor" href="health.html">Know More</a>
-							</div>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<!--//works-grids--->
-				</div>
-			</div>
-			<!----//works ---->
-			<!---- contact ----->
-			<div id="contact" class="contact">
-				<div class="conatiner">
-					<div class="contact-head text-center">
-							<h2>CONTACT ME</h2>
-							<span> </span>
-							<p>Feel free to ping me any time.</p>
-					</div>
-				</div>
-				<!----Contact-form---->
-				<div class="Contact-form">
-					
-<div class="footer">
-  <a class="social" href="https://www.facebook.com/ganeshn1411">&#62220;</a>
-  <a class="social" href="https://twitter.com/ganeshn1411">&#62217;</a>
-  <a class="social" href="https://plus.google.com/u/0/+ganeshn1411/posts">&#62223;</a>
-  <a class="social" href="http://lnkd.in/beM2pEZ">&#62232;</a>
-  <!--<div class="social">&#62235;</div>
-  <div class="social">&#62226;</div>
-  <div class="social">&#62214;</div>-->
 </div>
-			</div>
-			<!----//contact ----->
-			<!----copy-right---->
-			<div class="copy-right text-center">
-				<div class="container">
-					<script type="text/javascript">
-									$(document).ready(function() {
-										/*
-										var defaults = {
-								  			containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear' 
-								 		};
-										*/
-										
-										$().UItoTop({ easingType: 'easeOutQuart' });
-										
-									});
-					</script>
-					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!--gallery -->
+		<script src="js/jquery.chocolat.js"></script>		
+		<!--light-box-files -->
+		<script type="text/javascript">
+		$(function() {
+			$('.moments-bottom a').Chocolat();
+		});
+		</script> 
+<!--gallery js-->
+<div id="gallery" class="gallery">
+	 <div class="container">
+		<br>
+		 <h3>Work</h3>
+         <div class="gallery-info">
+				<div class="col-md-4 galry-grids">
+					<a class="b-link-stripe b-animate-go" href="resume/Ganesh.pdf" target="_blank">
+						<img src="images/dViz.png" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
 				</div>
+				<div class="col-md-4 galry-grids">
+					<a class="b-link-stripe b-animate-go" href="resume/Ganesh.pdf" target="_blank">
+						<img src="images/radio.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="col-md-4 galry-grids">
+					<a class="b-link-stripe b-animate-go" href="images/dViz.png">
+						<img src="images/driving.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>				
+				<div class="col-md-4 galry-grids">
+					<a class="b-link-stripe b-animate-go" href="images/dViz.png">
+						<img src="images/medicare.png" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="col-md-4 galry-grids">
+					<a class="b-link-stripe b-animate-go" href="images/dViz.png">
+						<img src="images/311.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="col-md-4 galry-grids">
+					<a class="b-link-stripe b-animate-go" href="images/dViz.png">
+						<img src="images/nba.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="col-md-4 galry-grids">
+					<a class="b-link-stripe b-animate-go" href="images/dViz.png">
+						<img src="images/restraunt.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="col-md-4 galry-grids moments-bottom">
+					<a class="b-link-stripe b-animate-go" href="images/dViz.png">
+						<img src="images/bmtc.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="col-md-4 galry-grids moments-bottom">
+					<a class="b-link-stripe b-animate-go" href="images/dViz.png" >
+						<img src="images/mediaserver.jpg" class="img-responsive" alt="">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>				
+				</div>
+				<div class="clearfix"> </div>
 			</div>
-			<!---//copy-right---->
-	</body>
-</html>
+	 </div>
+	 <br><br>
+</div>
+<!---->
+<div id="blog" class="blog">
+	 <div class="container">
+		 <h3>Blog</h3>
+		 <div class="blog-grids">
+			 <div class="col-md-6 blog-grid">
+				 <a href="#"><img src="images/b1.jpg" class="img-responsive" alt=""/></a> 
+				 <h4><a href="#">Etiam luctus velit ac cursus lobortis.</a></h4>
+					<span>Mar 12 | 2015</span>
+				 <p>Aenean eget eleifend nulla. Nunc vel nisi mi. Ut faucibus ornare tempus. Donec non mi et sem convallis tincidunt ac in purus. Nullam tincidunt orci elit, vitae vulputate sapien ullamcorper et. Sed ut est purus. Duis consectetur suscipit ullamcorper. Nam dictum nisl odio, eget maximus ante interdum iaculis urna sapien.</p>				 
+			 </div>
+			 <div class="col-md-6 blog-grid">
+				 <a href="#"><img src="images/b2.jpg" class="img-responsive" alt=""/> </a> 
+				 <h4><a href="#">Etiam luctus velit ac cursus lobortis.</a></h4>
+					<span>Mar 12 | 2015</span>
+				 <p>Aenean eget eleifend nulla. Nunc vel nisi mi. Ut faucibus ornare tempus. Donec non mi et sem convallis tincidunt ac in purus. Nullam tincidunt orci elit, vitae vulputate sapien ullamcorper et. Sed ut est purus. Duis consectetur suscipit ullamcorper. Nam dictum nisl odio, eget maximus ante interdum iaculis urna sapien.</p>
+			 </div>
+			 <div class="clearfix"></div>
+			 <div class="middleblog-grid blog-grid">
+				 <a href="#"><img src="images/b3.jpg" class="img-responsive" alt=""/> </a> 
+				 <h4><a href="#">Etiam luctus velit ac cursus lobortis.</a></h4>
+					<span>Mar 12 | 2015</span>
+				 <p>Aenean eget eleifend nulla. Nunc vel nisi mi. Ut faucibus ornare tempus. Donec non mi et sem convallis tincidunt ac in purus. Nullam tincidunt orci elit, vitae vulputate sapien ullamcorper et. Sed ut est purus. Duis consectetur suscipit ullamcorper. Nam dictum nisl odio, eget maximus ante interdum iaculis urna sapien.</p>
+				
+			 </div>
+		 </div>
+	 </div>
+</div>
+<div id="contact" class="contact">
+	 <div class="container">
+		 <h3>Contact</h3>
+		 <div class="touch-top">
+			 <div class="col-md-8 touch-left">
+				 <form>
+					<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
+					<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
+					<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}"></textarea>
+					<input type="submit" value="SUBMIT">				
+				 </form>	
+			 </div>
+			 <div class="col-md-4 touch-right">
+					<div class="touch-right-top">
+							<span class="add"> </span>
+							<h4>5701 Munhall Road,<label>Pittsburgh,PA</label></h4>
+					</div>
+					<div class="touch-right-top">
+							<span class="mail"> </span>
+							<p><a href="mailto:gnagendr@andrew.cmu.edu">gnagendr@andrew.cmu.edu</a></p>
+					</div>
+					<div class="touch-right-top">
+							<span class="num"> </span>
+							<p>+1 (412) 726 - 1709</p>
+					</div>
+			 </div>
+				<div class="clearfix"></div>
+		  </div>
+	 </div>
+</div>
+<div class="footer">
+	 <div class="container">
+		 <div class="social">							
+				<a href="#"><i class="facebook"></i></a>
+				<a href="#"><i class="twitter"></i></a>
+				<a href="#"><i class="dribble"></i></a>	
+				<a href="#"><i class="google"></i></a>	
+				<a href="#"><i class="youtube"></i></a>	
+		 </div>
+		 <div class="arrow">
+			 <a class="scroll" href="#home"><img src="images/top.png" alt=""></a>
+		 </div>
+	 </div>
+</div>
 
+</body>
+</html>		
+	
