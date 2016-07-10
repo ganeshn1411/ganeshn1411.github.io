@@ -30,7 +30,7 @@ body{
   z-index: 1;
 }
 .logo h1 a {
-	display: inline-block;
+  display: inline-block;
   color: #fff;
   font-size: 1em;
   text-decoration: none;
