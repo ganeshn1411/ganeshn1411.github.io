@@ -31,9 +31,8 @@ body{
 	font-size : 18px; 
 }
 
-.content h4 a{
+.header h4 a{
 	color : #3498db;
-	padding : 0 0 0 25%;
 }
 
 img{
