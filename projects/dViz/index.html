@@ -2,14 +2,15 @@
 <html>
 <head>
 <title>dViz</title>
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 <head>
 <body>
 <div class = "header">
 	<h1>DViz</h1>
-<hr>
+	<br/>
 </div>
-<br>
+<br/>
 <div class = "content">
 	<h2>About</h2>
 	<p>DViz is a broadly applicable data visualization tool to help assess disease risk and explore related interventions that may be the most appropriate for a patient. 
@@ -26,7 +27,31 @@
 	<h2>Data</h2>
 	<p>We conducted a preliminary study to evaluate computationally driven visualization techniques for improving risk assessment using high dimensional data on 8,611 patients with diabetes.</p>
 	<h2>Results</h2>
-	<p>We have built a tool that uses tecnhiques of dimensionaly reduction along with information visualization.<br>
-	It has the following features:</p>
+	<p>We have built a tool that uses tecnhiques of dimensionaly reduction along with information visualization.It has the following features:</p>
+	<ul>
+		<li>
+			<h3>Populaton View</h3>
+			<p>This visualization gives the risk distribution of the entire population. The values higher on the y axis indicate higher risk.
+			The positioning of features follows an attraction metaphor that patients with a high risk due to a feature are placed close to that feature.</p>	
+			<img src = "images/population.jpg" width = "75%" height = "50%" style = "left : 12.5%;position : relative">
+		</li>
+		<li>
+			<h3>Patient View</h3>
+			<p>The patient view aids understanding individual patient better. 
+			In addition to highlighting the patent in the entire population, it highlights those features that stand out for that patient.
+			It also provides comparison of ideal and actual values for the features highlighting those features that are out of the ideal range.</p>	
+			<img src = "images/patient1.jpg" width = "32%" height = "50%">
+			<img src = "images/patient2.jpg" width = "32%" height = "50%">
+			<img src = "images/patient3.jpg" width = "32%" height = "50%">
+		</li>
+		<li>
+			<h3>Intervention View</h3>
+			<p>Once a patient is identified to be at high risk, intervention view allows to visualize the impact of an individual intervention or a combination of interventions to identify the amount of risk reduction to help prioritize treatments.</p>	
+			<img src = "images/intervention1.jpg" width = "30%" >
+			<img src = "images/intervention2.jpg" width = "65%">
+		</li>
+	</ul>
 	</div>
+<br/>
+<br/>
 </body>
