@@ -18,10 +18,18 @@
 			<h2>About</h2>
 			<p>Emergency response management is a crucial element in effective manangement of city. 
 			In a city like New York, the scale of this problem just keeps growing and traditional ways of manageing an increasing demand is not easy.
-			Our project uses techniques of machine learning to provide a system that help city administratorrs better manage their emergency response systems like 311.</p>
+			Our project uses techniques of machine learning to provide a system that can help city administration a better way manage their emergency response systems like 311.</p>
+			<h2>Data</h2>
+			<p>Our data consisted of 311 calls for the past 10 years with description of each call like complaint type, location, agency that handled, time of response etc.</p>
 			<h2>Approach</h2>
+			<p>Given the problem to optimize resource allocation for 311 response, 
+			we translated this problem into predicting the number of complaints of a type in a borough for a given period of time. 
+			In addition to the 311 data, we considered input features like weather as most of the 311 complaints were weather related.
+			We tried different regression models to predict the number of complaits of a given type at a given location and time using these input features.</p>
 			<h2>Results</h2>
-			<p>If you want to have a deeper look, here is our report : <a href = "ProjectReport.pdf" target = "_blank" style = "color : #3498db;">Project Report</a></p>
+			<p>Time of the day, day of week and month seemed to have significant correlation with the number of complaints. 
+			In addition, adding weather based features helped us achieve a training accuracy of above 90%. </p>
+			<p>If you want to have an in depth look at our analysis, here is our report : <a href = "IBMDataHackathon_TeamZ.pdf" target = "_blank" style = "color : #3498db;">Project Report</a></p>
 		</div>
 	</body>
 </html>
