@@ -107,7 +107,7 @@ span.menu {
 }
 
 .banner-info li{
-	padding: 10% 0;
+	padding: 10px 0;
 }
 
 .banner-info ul{
@@ -303,6 +303,29 @@ label{
 .gallery-info{
 	margin-top:2.5em;
 }
+
+.workex h3 a{
+	font-size: 24px;
+	color: #7E8287;
+	text-decoration:none;
+}
+
+.workex h4{
+	font-size: 18px;
+	color: #e67e22
+}
+
+.workex h4 span{
+	font-size: 14px;
+	color: #e74c3c
+}
+
+.workex h5{
+	font-size: 16px;
+	color: #000;
+}
+
+
 /*----- Strip -----*/
 .b-link-stripe{
 	position:relative;
