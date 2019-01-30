@@ -1108,7 +1108,7 @@ i.fa.fa-hourglass-end {
 }
 
 .contact h1{
-	margin-bottom: 5%;
+	/*margin-bottom: 5%;*/
 	text-align: center;
 }
 
@@ -1194,7 +1194,7 @@ ul.top-links li {
 .top-links {
 	display: flex;
 	justify-content: center;
-	padding: 20px;
+	padding: 50px;
 	background: rgba(25, 25, 25, 0.8);
 }
 
