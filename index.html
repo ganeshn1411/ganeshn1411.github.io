@@ -1,316 +1,547 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Ganesh N</title>
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<title>My Personal Website</title>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!-- Portfolio-CSS -->	<link rel="stylesheet" href="css/swipebox.css" type="text/css" media="all">
+		
+<link href="css/aos.css" rel="stylesheet" type="text/css" media="all" /><!-- //animation effects-css-->
+
+<link rel="stylesheet" href="css/index.css"><!-- skills bars CSS-->
+
+<!-- custom-theme -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" />
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<script src="js/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<!--scrolling-->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
- <script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-			});
-		});
-	</script>
-<!--scrolling-->
+<!-- //custom-theme -->
+	  
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+
+<!-- googlefonts -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900&amp;subset=arabic,latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!-- //googlefonts -->
+
 </head>
-<body>	
-<!--top-header-->
-<div id="home" class="top-header">
-	 <div class="container">
-		<div class = "fixed-header">
-			<div class="top-menu">
-				<span class="menu"><img src="images/nav-icon.png" alt=""/></span>
-				<br/>
-					<ul>
-				<li><a class="scroll" href="#home">Home</a></li>
-				<li><a class="scroll" href="#service">About</a></li>
-				<li><a href="resume/Ganesh.pdf" target="_blank">Resume</a></li>
-				<li><a class="scroll" href="#gallery">Projects</a></li>
-				<li><a class="scroll" href="#blog">Blog</a></li>
-				<li><a class="scroll" href="#contact">Contact</a></li>
-			 </ul>
-			 <br/>
-					<!-- script-for-menu -->
-					<script>					
-							$("span.menu").click(function(){
-								$(".top-menu ul").slideToggle("slow" , function(){
-								});
-							});
-				 </script>
-					<!-- script-for-menu -->
-			</div>
-			</div>
-		  </div>
-	 </div>
-</div>	
-<!--header-->
-<div class="header">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- banner -->
+<div class="banner" id="home">
+	<div class="agileinfo-dot">
 		<div class="container">
-			 <div class="banner-info">
-				 <h2>Hey, I'm Ganesh</h2>
-				 <br>
-				 <h3>Explore my site to get to know about me and my work</h3>
-				 <br><br><br>
-				 <ul>
-					<li><h3>Email : <a href="mail-to:gnagendr@andrew.cmu.edu">gnagendr@andrew.cmu.edu</a></h3></li>
-					<li><h3>LinkedIn : <a href="https://www.linkedin.com/in/ganeshn1411" target="_blank">Ganesh N Prasad</a></h3></li>
-				</ul>
-			 </div>
-			 <div class="clearfix"></div>
+		<!-- header -->
+		<div class="header-w3layouts"> 
+			<!-- Navigation -->
+			<nav class="navbar navbar-default navbar-fixed-top"> 
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Menu</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div> 
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav navbar-right cl-effect-15">
+							<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+							<li class="hidden"><a class="page-scroll" href="#page-top"></a>	</li>
+							<li><a class="page-scroll scroll" href="#home">Home</a></li>
+							<li><a class="page-scroll scroll" href="#about">About</a></li>
+							<li><a class="page-scroll scroll" href="#education">Education</a></li>
+							<li><a class="page-scroll scroll" href="#experience">Experience</a></li>
+							<li><a class="page-scroll scroll" href="#portfolio">Projects</a></li>
+							<li><a class="page-scroll scroll" href="#blogs">Blogs</a></li>
+							<li><a class="page-scroll scroll" href="#contact">Contact</a></li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				<!-- /.container -->
+			</nav>  
+		</div>	
+		<!-- //header -->
+
+			<div class="w3_banner_info">
+				<div class="w3_banner_info_grid">
+					<h2 >I'm Ganesh</h2>
+					<h5>Data Scientist @ Mastercard</h5>
+					<p>I build data products that can help businesses make smarter decisions. The field of Data Science has evolved from research experiments
+						to industry grade implementations to solve everyday challenges. I am very much interested in Applying Data Science techniques of Machine Learning and 
+						Artificial Intelligence to solve real world problems. </p>
+					<ul data-aos="slide-up">
+						<li><a href="Resume.pdf" target="_blank" class="w3ls_more"><i class="fa fa-download" aria-hidden="true"></i> Download Resume</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="thim-click-to-bottom">
+				<a href="#about" class="scroll">
+					<i class="fa fa-arrows-v" aria-hidden="true"></i>
+				</a>
+			</div>
 		</div>
-</div>
-<!--Service-->
-<div id="service" class="service">
-		<div class="container">
-			<h3>About Me</h3>
-			<br>
-			<br>
-			<h4 style="text-align:center"> I am a Masters student of Information Systems - Data Analytics at Carnegie Mellon University.</h4> 
-			<br>
-			<h4 style="text-align:center">I strongly believe that Data Science has the power to make the world a better place to live in and love to contribute in this exciting field. </h4>
-		</div>
-	 </div>
-	 <div class= "icon-title">
-		<h4>Experience</h4>
 	</div>
-	 <br>
-				<div class="container workex">
-					<div class="col-md-4">
-						<h3><a href="http://www.gridwise.io/" target="_blank">GridWise</a><h3>
-						<h4>Data Science Intern <span>(Aug 2016)</span></h4>
-						<h5>Developed a model to identify hotspots in a city to help Uber and Lyft drivers get more rides.</h5>
-					</div>
-					<div class="col-md-4">
-						<h3><a href="http://www.azuga.com/" target="_blank">Azuga</a></h3>
-						<h4>Data Science Intern <span>(Aug 2016)</span></h4>
-						<h5>Developed a model to predict battery health and identify low battery events in a car.</h5>
-					</div>					
-					<div class="col-md-4">
-						<h3><a href="http://www.cisco.com/c/en/us/index.html" target="_blank">Cisco</a></h3>
-						<h4>IT Engineer <span>(Jul 2015)</span></h4>
-						<h5>SME of Continuous Delivery ,a platform to automatically build, test and deploy to Cloud.</p>
-					</div>
-				</div>
-				<br><br>
-				<div class= "icon-title">
-					<h4>Interests</h4>
-				</div>
-	 				<!--- about-grids --->
-				<div class="about-grids text-center">
-					<div class="container">
-						<div class="col-md-3 about-grid">
-							<div><img src="images/png/settings48.png" height="32px"; width="32px"></div>
-							<p>Machine Learning</p>
-							<label></label>
-						</div>
-						<div class="col-md-3 about-grid">
-							<div><img src="images/png/intelligence.png" height="32px"; width="32px"></div>
-							<p>Artificial Intelligence</p>
-							<label></label>
-						</div>
-						<div class="col-md-3 about-grid">
-							<div><img src="images/png/data62.png" height="32px"; width="32px"></div>
-							<p>Data Analytics</p>
-							<label></label>
-						</div>
-						<div class="col-md-3 about-grid">
-							<div><img src="images/png/data29.png" height="32px"; width="32px"></div>
-							<p>Cloud Computing</p>
-						</div>
+</div>
+<!-- banner -->
+
+<!-- bootstrap-modal-pop-up -->
+	<!-- modal -->
+	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header"> 
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+						<h4 class="modal-title">About Me</h4>
+				</div> 
+				<div class="modal-body">
+					<div class="modalpad"> 
 						<div class="clearfix"> </div>
-					</div>
 				</div>
-				<!--- about-grids --->
-				<br>
-</div>
-<!--gallery -->
-		<script src="js/jquery.chocolat.js"></script>		
-		<!--light-box-files -->
-		<script type="text/javascript">
-		$(function() {
-			$('.moments-bottom a').Chocolat();
-		});
-		</script> 
-<!--gallery js-->
-<div id="gallery" class="gallery">
-	 <div class="container">
-		<br>
-		 <h3>Projects</h3>
-         <div class="gallery-info">
-				<div class="col-md-4 galry-grids">
-					<a class="b-link-stripe b-animate-go" href="projects/dViz" target="_blank">
-						<img src="images/dViz.jpg" class="img-responsive" alt="">
-						<div class="b-wrapper">
-							<span class="b-animate b-from-left    b-delay03 ">
-								<img class="img-responsive" src="images/e.png" alt=""/>
-							</span>					
-						</div>
-					</a>				
-				</div>
-				<div class="col-md-4 galry-grids">
-					<a class="b-link-stripe b-animate-go" href="projects/radiodiagnosis" target="_blank">
-						<img src="images/radio.jpg" class="img-responsive" alt="">
-						<div class="b-wrapper">
-							<span class="b-animate b-from-left b-delay03 ">
-								<img class="img-responsive" src="images/e.png" alt=""/>
-							</span>					
-						</div>
-					</a>				
-				</div>
-				<div class="col-md-4 galry-grids">
-					<a class="b-link-stripe b-animate-go" href="projects/unsafedriving" target="_blank">
-						<img src="images/driving.jpg" class="img-responsive" alt="">
-						<div class="b-wrapper">
-							<span class="b-animate b-from-left    b-delay03 ">
-								<img class="img-responsive" src="images/e.png" alt=""/>
-							</span>					
-						</div>
-					</a>				
-				</div>				
-				<div class="col-md-4 galry-grids">
-					<a class="b-link-stripe b-animate-go" href="projects/medicare" target="_blank">
-						<img src="images/medicare.jpg" class="img-responsive" alt="">
-						<div class="b-wrapper">
-							<span class="b-animate b-from-left    b-delay03 ">
-								<img class="img-responsive" src="images/e.png" alt=""/>
-							</span>					
-						</div>
-					</a>				
-				</div>
-				<div class="col-md-4 galry-grids">
-					<a class="b-link-stripe b-animate-go" href="projects/311" target="_blank">
-						<img src="images/311.jpg" class="img-responsive" alt="">
-						<div class="b-wrapper">
-							<span class="b-animate b-from-left    b-delay03 ">
-								<img class="img-responsive" src="images/e.png" alt=""/>
-							</span>					
-						</div>
-					</a>				
-				</div>
-				
-				<div class="col-md-4 galry-grids">
-					<a class="b-link-stripe b-animate-go" href="projects/nba" target="_blank">
-						<img src="images/nba.jpg" class="img-responsive" alt="">
-						<div class="b-wrapper">
-							<span class="b-animate b-from-left    b-delay03 ">
-								<img class="img-responsive" src="images/e.png" alt=""/>
-							</span>					
-						</div>
-					</a>				
-				</div>
-				<div class="col-md-4 galry-grids">
-					<a class="b-link-stripe b-animate-go" href="projects/restraunt" target="_blank">
-						<img src="images/restraunt.jpg" class="img-responsive" alt="">
-						<div class="b-wrapper">
-							<span class="b-animate b-from-left    b-delay03 ">
-								<img class="img-responsive" src="images/e.png" alt=""/>
-							</span>					
-						</div>
-					</a>				
-				</div>
-				<div class="col-md-4 galry-grids">
-					<a class="b-link-stripe b-animate-go" href="projects/bmtc" target="_blank">
-						<img src="images/bmtc.png" class="img-responsive" alt="">
-						<div class="b-wrapper">
-							<span class="b-animate b-from-left    b-delay03 ">
-								<img class="img-responsive" src="images/e.png" alt=""/>
-							</span>					
-						</div>
-					</a>				
-				</div>
-				<div class="col-md-4 galry-grids">
-					<a class="b-link-stripe b-animate-go" href="projects/mediaserver" target="_blank">
-						<img src="images/mediaserver.jpg" class="img-responsive" alt="">
-						<div class="b-wrapper">
-							<span class="b-animate b-from-left    b-delay03 ">
-								<img class="img-responsive" src="images/e.png" alt=""/>
-							</span>					
-						</div>
-					</a>				
-				</div>
-				<div class="clearfix"> </div>
 			</div>
-	 </div>
-	 <br><br>
+		</div>
+	</div>
+	</div>
+	<!-- //modal -->	
+<!-- //bootstrap-modal-pop-up --> 
+
+<!-- about -->
+<div class="about" id="about">
+	<h3 data-aos="zoom-in">My Story</h3>
+	<div class="col-md-6 about-left">
+		<!--<h3 data-aos="slide-up">Hello</h3>-->
+		<p>I started my journey into Computer Science in my undergrad. I was instantly attracted to the concept of taking math and logic and applying it to solve problems.
+			The feeling when you build something was always magical and what kept me going.</p>
+		<p> When I was in my third year, I was introduced to Data Mining. The concept of using data and simple concepts like association rules and decision trees to build 
+		systems that were smarter sounded fascinating. After graduating from my bachelor's program, I went on to work at Cisco as an Software Engineer. 
+	Here, I was exposed to world of IoT(Internet of Things) and how data analytics on the data from these sensors can build smart cities. 
+	I was convinced that the field of Data Science was the future of computer science and wanted to build my expertise on it. That's when I decided to do my 
+	Masters in Information Systems focused on Data Analytics at Carnegie Mellon University.</p>
+	<p>Since graduating from my Masters', I have been working at Mastercard as a Data Scientist. I am part of the rapid prototyping team within the Data Analytics division involved 
+		in figuring out the right technologies and data to solve a business need of our client and building prototypes for the same. I am also involved in identifying opportunities 
+		within the company to bring in Artificial Intelligence into the workforce by building AI products and educating teams on how to apply it in their world.</p>
+	<p>Outside my work, I like to spend my time playing mandolin, swimming, reading books or the de-facto fallback of watching Netflix.</p>
+	</div>
+	<div data-aos="flip-right" class="col-md-6 about-right">
+		<img src="images/about4.png" alt="" />
+	</div>
+	<!--<div class="clearfix"></div>-->
 </div>
-<!---->
-<div id="blog" class="blog">
-	 <div class="container">
-		 <h3>Blog</h3>
-		 <div class="blog-grids">
-			 <div class="col-md-6 blog-grid">
-				 <a href="https://ganeshn1411blog.wordpress.com/2016/05/10/deep-learning/" target="_blank"><img src="images/deep.png" class="img-responsive" alt=""/></a> 
-				 <h4><a href="https://ganeshn1411blog.wordpress.com/2016/05/10/deep-learning/" target="_blank">Deep Learning Series</a></h4>
-					<span>Mar 10 | 2016</span>
-					<br>
-				 <h4>A series of blogs that introduces to deep learning, its applications and some state of the art techniques used.</h4>
-			 </div>
-			 <div class="col-md-6 blog-grid">
-				 <a href="https://medium.com/@ganeshn1411/is-digital-india-sufficient-for-healthcare-to-use-the-power-of-data-31c24f2437d1#.fpfy4jh47" target="_blank"><img src="images/digitalIndia.jpg" class="img-responsive" alt=""/> </a> 
-				 <h4><a href="https://medium.com/@ganeshn1411/is-digital-india-sufficient-for-healthcare-to-use-the-power-of-data-31c24f2437d1#.fpfy4jh47" target="_blank">Digital India</a></h4>
-					<span>Jun 2 | 2016</span>
-					<br>
-				 <h4>Complementing Digital India with techniques of Data Science and Data Engineering.</h4>
-			 </div>
-			 <div class="clearfix"></div>
+<!-- //about -->
+
+<!-- /education -->
+ <div class="education" id="education">
+	 	<div class="about">
+			<h3 data-aos="zoom-in">My Education</h3>
 		 </div>
-	 </div>
+		<div class="container-fluid">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+					<ul class="timeline timeline-centered">
+						<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Sept 2015 - Dec 2016</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Carnegie Mellon University</h3>
+							<a href="https://www.heinz.cmu.edu/programs/information-systems-management-master/bida" target="_blank"><h4 class="timeline-subtitle">Master's in Information Systems - Data Analytics</h4></a>
+							<p>Took up courses like Statistics, Data Mining, Machine Learning, Applied Data Science, Language & Statistics etc. all of which gave me a good foundation about the various data science techniques and machine learning algorithms out there and how to apply them to solve real world problems.</p>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-info">
+							<span>Sept 2010 - Jun 2014</span>
+						</div>
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">R.V. College of Engineering</h3>
+							<a href="https://rvce.edu.in/rvce-ise-main-page" target="_blank"><h4 class="timeline-subtitle">Bachelor's in Information Science and Engineering</h4></a>
+							<p>Got introduced to programming languages like C, C++, Java and Javascript and computer science concepts Data Structures, Algorithms, Operating Systems, Compilers, Computer Networks and Web Programming, all of which gave me a solid foundation to connect the dots to build software solutions.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+	</div>
 </div>
-<div id="contact" class="contact">
-	 <div class="container">
-		 <h3>Contact</h3>
-		 <div class="touch-top">
-			 <div class="col-md-8 touch-left">
-				 <form action="mailto:ganeshn1411@gmail.com" method="post" enctype="text/plain" >
-					<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
-					<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
-					<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}"></textarea>
-					<input type="submit" value="SUBMIT">				
-				 </form>	
-			 </div>
-			 <div class="col-md-4 touch-right">
-					<div class="touch-right-top">
-							<span class="add"> </span>
-							<h4>5701 Munhall Road,<label>Pittsburgh,PA</label></h4>
-					</div>
-					<div class="touch-right-top">
-							<span class="mail"> </span>
-							<p><a href="mailto:gnagendr@andrew.cmu.edu">gnagendr@andrew.cmu.edu</a></p>
-					</div>
-					<div class="touch-right-top">
-							<span class="num"> </span>
-							<p>+1 (412) 726 - 1709</p>
-					</div>
-			 </div>
-				<div class="clearfix"></div>
-		  </div>
-	 </div>
+ <!-- //education -->
+
+
+<!-- /experience -->
+<div class="education" id="experience">
+		<div class="about">
+		   <h3 data-aos="zoom-in">My Experience</h3>
+		</div>
+	   <div class="container-fluid">
+		   <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+				   <ul class="timeline timeline-centered">
+					   <li class="timeline-item">
+					   <div class="timeline-info">
+						   <span>Feb 2017 - Present</span>
+					   </div>
+					   <div class="timeline-marker"></div>
+					   <div class="timeline-content">
+						   <h3 class="timeline-title">Mastercard</h3>
+						   <h4 class="timeline-subtitle">Data Scientist</h4>
+						   <p>I am part of the Data Analytics wing at Mastercard responsible for building applications using our transaction data to help our partners improve their business. 
+							   I have been part of various projects ranging from identifying the right metrics to investgate an issue, building classification, regression and recommendation models to target the right population and finally measure the success of these models using our data. </p>
+							<br>
+							<p>In addition to my work, I am heavily involved in bringing in Artificial Intelligence into Mastercard through various workshops and contests.</p>
+						</div>
+				   </li>
+				   <li class="timeline-item">
+					   <div class="timeline-info">
+						   <span>Jun 2016 - Aug 2016</span>
+					   </div>
+					   <div class="timeline-marker"></div>
+					   <div class="timeline-content">
+						   <h3 class="timeline-title">Gridwise</h3>
+						   <h4 class="timeline-subtitle">Data Science Intern</h4>
+						   <p>I was responsible for architecting and implementing a system to improve the on-road time and efficiency for Uber and Lyft drivers.
+							   In a span of 2 months, I developed the first working prototype of a system to forecast demand for taxi and ride-share apps in different parts of a city based on external events.</p>
+					   </div>
+				   </li>
+				   <li class="timeline-item">
+					   <div class="timeline-info">
+						   <span>Jul 2014 - Jul 2015</span>
+					   </div>
+					   <div class="timeline-marker"></div>
+					   <div class="timeline-content">
+						   <h3 class="timeline-title">Cisco</h3>
+						   <h4 class="timeline-subtitle">Software Engineer</h4>
+						   <p>Being part of the Platform-as-a-Service team in Cisco, I was responsible for development of various autoamtion processes to enable Cisco's application development teams with easy and stremlined platform services. 
+							   Specifically, I was responsible for the development of an internal Continuous Integration / Continuous Development (CI/CD) process and automated testing processes.</p>
+					   </div>
+				   </li>
+			   </ul>
+		   </div>
+   </div>
 </div>
-<div class="footer">
-	 <div class="container">
-		 <div class="social">							
-				<a href="https://www.facebook.com/ganeshn1411" target="_blank"><i class="facebook"></i></a>
-				<a href="https://twitter.com/ganeshn1411" target="_blank"><i class="twitter"></i></a>
-				<a href="https://plus.google.com/+ganeshn1411/" target="_blank"><i class="google"></i></a>	
-				<a href="https://www.youtube.com/channel/UCXStSZS6DGNnubKdFuek9OA" target="_blank"><i class="youtube"></i></a>	
-		 </div>
-		 <div class="arrow">
-			 <a class="scroll" href="#home"><img src="images/top.png" alt=""></a>
-		 </div>
-	 </div>
+<!-- //experience -->
+ 
+ <!-- Portfolio -->
+	<div class="portfolio" id="portfolio">
+		<h3 data-aos="zoom-in" >Projects</h3>
+
+		<div class="tabs tabs-style-bar">
+			<nav>
+				<ul>
+					<li><a href="#section-bar-1" class="icon icon-box"><span>All</span></a></li>
+					<li><a href="#section-bar-1" class="icon icon-box"><span>Machine Learning</span></a></li>
+					<li><a href="#section-bar-2" class="icon icon-display"><span>Data Analysis</span></a></li>
+				</ul>
+			</nav>
+
+			<div class="content-wrap">
+
+				<!-- Tab-1 -->
+				<section id="section-bar-1" class="agileits w3layouts">
+					<h4>All Projects</h4>
+					<div class="gallery-grids">
+						<div class="col-md-4 col-sm-4 gallery-top">
+							<a href="images/5.jpg" class="swipebox">
+								<figure class="effect-bubba">
+									<img src="images/self_driving_simulation.jpg" alt="" class="img-responsive">
+									<figcaption>
+										<h4>Self Driving Car Simulation</h4>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-4 gallery-top">
+							<a href="images/p4.jpg" class="swipebox">
+								<figure class="effect-bubba">
+									<img src="images/unsafe_driving.jpg" alt="" class="img-responsive">
+									<figcaption>
+										<h4>Unsafe Driving Detection</h4>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-4 gallery-top">
+							<a href="images/p5.jpg" class="swipebox">
+								<figure class="effect-bubba">
+									<img src="images/chatbot.jpg" alt="" class="img-responsive">
+									<figcaption>
+										<h4>FAQ Chatbot</h4>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+				</section>
+				<!-- //Tab-1 -->
+
+				<!-- Tab-2 -->
+				<section id="section-bar-2" class="agileits w3layouts">
+					<h4>Machine Learning Projects</h4>
+					<div class="gallery-grids">
+						<div class="col-md-4 col-sm-4 gallery-top">
+							<a href="images/p1.jpg" class="swipebox">
+								<figure class="effect-bubba">
+									<img src="images/dViz.png" alt="" class="img-responsive">
+									<figcaption>
+										<h4>Diagnostic Intervention Platform</h4>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-4 gallery-top">
+							<a href="images/p2.jpg" class="swipebox">
+								<figure class="effect-bubba">
+									<img src="images/customer_targeting.jpg" alt="" class="img-responsive">
+									<figcaption>
+										<h4>Telemarketing Customer Targeting</h4>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+				</section>
+				<!-- //Tab-2 -->
+
+				<!-- Tab-3 -->
+				<section id="section-bar-3" class="agileits w3layouts">
+					<h4>Data Analysis Projects</h4>
+					<div class="gallery-grids">
+						<div class="col-md-4 col-sm-4 gallery-top">
+							<a href="images/p1.jpg" class="swipebox">
+								<figure class="effect-bubba">
+									<img src="images/311.png" alt="" class="img-responsive">
+									<figcaption>
+										<h4>311 Call Analysis</h4>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-4 gallery-top">
+							<a href="images/p2.jpg" class="swipebox">
+								<figure class="effect-bubba">
+									<img src="images/medicare.jpg" alt="" class="img-responsive">
+									<figcaption>
+										<h4>Medicare Cost Analysis</h4>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-4 gallery-top">
+							<a href="images/p3.jpg" class="swipebox">
+								<figure class="effect-bubba">
+									<img src="images/nba.jpg" alt="" class="img-responsive">
+									<figcaption>
+										<h4>NBA Salary Analysis</h4>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+				</section>
+				<!-- //Tab-3 -->
+				
+			</div><!-- //Content -->
+		</div><!-- //Tabs -->
 </div>
+<!-- //Portfolio -->
+
+<!-- Blogs -->
+<div class="portfolio" id="blogs">
+	<h3 data-aos="zoom-in" >Blogs</h3>
+
+	<div class="tabs tabs-style-bar">
+		<nav>
+			<ul>
+				<li><a href="#section-bar-1" class="icon icon-box"><span>Data Science</span></a></li>
+				<li><a href="#section-bar-1" class="icon icon-box"><span>General</span></a></li>
+			</ul>
+		</nav>
+
+		<div class="content-wrap">
+
+			<!-- Tab-1 -->
+			<section id="section-bar-1" class="agileits w3layouts">
+				<h4>Data Science Blogs</h4>
+				<div class="gallery-grids">
+					<div class="col-md-4 col-sm-4 gallery-top">
+						<a href="https://medium.com/@ganeshn1411/how-i-approach-a-data-science-problem-714bfbc5c68c" target="_blank">
+							<figure class="effect-bubba">
+								<img src="images/data_science_approach.jpg" alt="" class="img-responsive">
+								<figcaption>
+									<h4>How to Approach a Data Science Problem</h4>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 gallery-top">
+						<a href="images/p4.jpg" class="swipebox">
+							<figure class="effect-bubba">
+								<img src="images/unsafe_driving.jpg" alt="" class="img-responsive">
+								<figcaption>
+									<h4>Unsafe Driving Detection</h4>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 gallery-top">
+						<a href="images/p5.jpg" class="swipebox">
+							<figure class="effect-bubba">
+								<img src="images/chatbot.jpg" alt="" class="img-responsive">
+								<figcaption>
+									<h4>FAQ Chatbot</h4>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+			</section>
+			<!-- //Tab-1 -->
+
+			<!-- Tab-2 -->
+			<section id="section-bar-2" class="agileits w3layouts">
+				<h4>Machine Learning</h4>
+				<div class="gallery-grids">
+					<div class="col-md-4 col-sm-4 gallery-top">
+						<a href="images/p1.jpg" class="swipebox">
+							<figure class="effect-bubba">
+								<img src="images/dViz.png" alt="" class="img-responsive">
+								<figcaption>
+									<h4>Diagnostic Intervention Platform</h4>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 gallery-top">
+						<a href="images/p2.jpg" class="swipebox">
+							<figure class="effect-bubba">
+								<img src="images/customer_targeting.jpg" alt="" class="img-responsive">
+								<figcaption>
+									<h4>Telemarketing Customer Targeting</h4>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+			</section>
+			<!-- //Tab-2 -->
+
+			<!-- Tab-3 -->
+			<section id="section-bar-3" class="agileits w3layouts">
+				<h4>Data Analytics</h4>
+				<div class="gallery-grids">
+					<div class="col-md-4 col-sm-4 gallery-top">
+						<a href="images/p1.jpg" class="swipebox">
+							<figure class="effect-bubba">
+								<img src="images/311.png" alt="" class="img-responsive">
+								<figcaption>
+									<h4>311 Call Analysis</h4>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 gallery-top">
+						<a href="images/p2.jpg" class="swipebox">
+							<figure class="effect-bubba">
+								<img src="images/medicare.jpg" alt="" class="img-responsive">
+								<figcaption>
+									<h4>Medicare Cost Analysis</h4>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 gallery-top">
+						<a href="images/p3.jpg" class="swipebox">
+							<figure class="effect-bubba">
+								<img src="images/nba.jpg" alt="" class="img-responsive">
+								<figcaption>
+									<h4>NBA Salary Analysis</h4>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+			</section>
+			<!-- //Tab-3 -->
+			
+		</div><!-- //Content -->
+	</div><!-- //Tabs -->
+</div>
+<!-- //Blogs -->
+
+<!-- contact -->
+<div class="contact" id="contact">
+	<h1 data-aos="zoom-in">CONNECT WITH ME</h1>
+	<ul class="col-md-12 top-links">
+		<li ><a href="https://www.linkedin.com/in/ganeshn1411/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+		<li ><a href="https://www.facebook.com/ganeshn1411" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		<li ><a href="https://twitter.com/ganeshn1411" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		<li ><a href="https://github.com/ganeshn1411" target="_blank"><i class="fa fa-github"></i></a></li>
+	</ul>
+</div>
+<!-- //contact -->
+
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- //js -->
+
+<!-- Gallery-Tab-JavaScript -->
+			<script src="js/cbpFWTabs.js"></script>
+			<script>
+				(function() {
+					[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+						new CBPFWTabs( el );
+					});
+				})();
+			</script>
+<!-- //Gallery-Tab-JavaScript -->
+	<!-- Swipe-Box-JavaScript -->
+			<script src="js/jquery.swipebox.min.js"></script> 
+				<script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+			</script>
+		<!-- //Swipe-Box-JavaScript -->
+
+<!-- Scrolling Nav JavaScript --> 
+    <script src="js/scrolling-nav.js"></script>  
+<!-- //fixed-scroll-nav-js --> 
+
+<script src="js/index.js"></script><!-- skills bars JS FILE-->
+	
+<!-- animation effects-js files-->
+	<script src="js/aos.js"></script><!-- //animation effects-js-->
+	<script src="js/aos1.js"></script><!-- //animation effects-js-->
+<!-- animation effects-js files-->
+
+<!-- //here starts scrolling icon -->
+<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- here stars scrolling script -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	<!-- //here ends scrolling script -->
+<!-- //here ends scrolling icon -->
+
+<!-- scrolling script -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> 
+<!-- //scrolling script -->
 
 </body>
-</html>		
-	
+</html>
